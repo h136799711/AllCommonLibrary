@@ -1,0 +1,32 @@
+1.首页功能导航
+bmw_Fcode 功能表
+	id 自增
+	name 名称
+	desc 描述、概述
+	url  点击后跳到的链接地址
+	PicUrl 图片地址
+	Level 级别
+	notes 备注
+bmw_User
+	id 自增
+	uid 用户编码
+	nickname 昵称
+	password 密码
+	groupid 组id 
+	roleid	角色id
+	
+bmw_UserGroup 用户组
+	id 组id
+	groupname 名称
+	desc 描述
+
+bmw_UserRole 角色
+	Roleid 角色id
+	RoleName 角色名称
+	RoleDesc 描述
+	
+bmw_UserGroupRole 组角色
+	groupid
+	roleid
+	
+	

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML >
+<html>
+ <head>
+  <title> 配置参数查看 </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="hebidu">
+  <meta name="Keywords" content="配置参数查看">
+  <meta name="Description" content="配置参数查看">
+  <style type="text/css">
+	.red{
+		color:red;
+	}
+  </style>
+ </head>
+
+ <body>
+  
+<ul>
+	<li>
+DB_NAME ： <span class="red">{$DB_NAME}</span></li>
+	<li>
+DB_HOST ： <span class="red">{$DB_HOST}</span></li>
+	<li>
+DB_NAME ： <span class="red">{$DB_NAME}</span></li>
+	<li>
+DB_USER ： <span class="red">{$DB_USER}</span></li>
+	<li>
+DB_PWD ： <span class="red">{$DB_PWD}</span></li>
+	<li>
+是否属于 CGI模式 ： <span class="red">{$Think.const.IS_CGI?"是":"否"}</span></li>
+	
+	<li>
+是否属于 Windows环境 ： <span class="red">{$Think.const.IS_WIN?"是":"否"}</span></li>
+	
+	<li>
+是否属于命令行模式 ： <span class="red">{$Think.const.IS_CLI ?"是":"否"}</span></li>
+	
+	<li>
+网站根目录地址 ： <span class="red">{$ROOT}</span></li>
+	<li>
+当前应用（入口文件）地址  ： <span class="red">{$APP}</span></li>
+	<li>
+当前分组的URL地址 ： <span class="red">{$MODULE}</span></li>
+	<li>
+当前模块的URL地址 ： <span class="red">{$CONTROLLER}</span></li>
+	<li>
+当前操作的URL地址  ： <span class="red">{$ACTION}</span></li>
+	<li>
+当前URL地址  ： <span class="red">{$SELF}</span></li>
+	<li>
+当前的PATH_INFO字符串  ： <span class="red">{$INFO}</span></li>
+	<li>
+当前操作的URL地址  ： <span class="red">{$MODULE}</span></li>
+	 
+</ul>
+
+ </body>
+</html>
