@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>表格 - 后台管理模板</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+       <nav class="navbar navbar-inverse navbar-fixed-top bd-navbar" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">后台管理</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav side-nav bd-side-nav">
+            <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> 控制台</a></li>
+            <li><a href="charts.html"><i class="fa fa-bar-chart-o"></i> 图表</a></li>
+            <li><a href="tables.html"><i class="fa fa-table"></i> 表格</a></li>
+            <li><a href="forms.html"><i class="fa fa-edit"></i> 表单</a></li>
+            <li><a href="typography.html"><i class="fa fa-font"></i> 印刷样式</a></li>
+            <li><a href="bootstrap-elements.html"><i class="fa fa-desktop"></i> Bootstrap 元素</a></li>
+            <li><a href="bootstrap-grid.html"><i class="fa fa-wrench"></i> Bootstrap 格子</a></li>
+            <li><a href="blank-page.html"><i class="fa fa-file"></i> 空白页面</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> 下拉 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">下拉项</a></li>
+                <li><a href="#">另一个项</a></li>
+                <li><a href="#">第三项</a></li>
+                <li><a href="#">最后一项</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right navbar-user">
+            <li class="dropdown messages-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> 消息 <span class="badge">7</span> <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">7 新消息</li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                    <span class="name">A:</span>
+                    <span class="message">我想要问你些事情...</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                    <span class="name">A:</span>
+                    <span class="message">我想要问你些事情...</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                   <span class="name">A:</span>
+                    <span class="message">我想要问你些事情...</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">查看收信箱 <span class="badge">7</span></a></li>
+              </ul>
+            </li>
+            <li class="dropdown alerts-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> 警告 <span class="badge">3</span> <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">默认 <span class="label label-default">默认</span></a></li>
+                <li><a href="#">原始 <span class="label label-primary">原始</span></a></li>
+                <li><a href="#">成功 <span class="label label-success">成功</span></a></li>
+                <li><a href="#">信息 <span class="label label-info">信息</span></a></li>
+                <li><a href="#">警告 <span class="label label-warning">警告</span></a></li>
+                <li><a href="#">危险 <span class="label label-danger">危险</span></a></li>
+                <li class="divider"></li>
+                <li><a href="#">查看所有</a></li>
+              </ul>
+            </li>
+            <li class="dropdown user-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> 陈晓航 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-user"></i> 个人信息</a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i> 收信箱 <span class="badge">7</span></a></li>
+                <li><a href="#"><i class="fa fa-gear"></i> 配置</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-power-off"></i> 登出</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+      <div id="page-wrapper">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>表格<small>对你的数据进行排序</small></h1>
+            <ol class="breadcrumb">
+              <li><a href="index.html"><i class="fa fa-dashboard"></i> 控制台</a></li>
+              <li class="active"><i class="fa fa-table"></i> Tables</li>
+            </ol>
+            <div class="alert alert-info alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              我使用了 <a class="alert-link" href="http://tablesorter.com/docs/">Tablesorter 2.0</a> 作为表格的排序方法.请阅读文档使用更多自定义选项或自由使用其它的!
+            </div>
+          </div>
+        </div><!-- /.row -->
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>边框表格</h2>
+            <div class="table-responsive">
+              <table class="table table-bordered table-hover tablesorter">
+                <thead>
+                  <tr>
+                    <th>页面 <i class="fa fa-sort"></i></th>
+                    <th>访问数 <i class="fa fa-sort"></i></th>
+                    <th>% 新访问比例 <i class="fa fa-sort"></i></th>
+                    <th>收入 <i class="fa fa-sort"></i></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>/index.html</td>
+                    <td>1265</td>
+                    <td>32.3%</td>
+                    <td>$321.33</td>
+                  </tr>
+                  <tr>
+                    <td>/about.html</td>
+                    <td>261</td>
+                    <td>33.3%</td>
+                    <td>$234.12</td>
+                  </tr>
+                  <tr>
+                    <td>/sales.html</td>
+                    <td>665</td>
+                    <td>21.3%</td>
+                    <td>$16.34</td>
+                  </tr>
+                  <tr>
+                    <td>/blog.html</td>
+                    <td>9516</td>
+                    <td>89.3%</td>
+                    <td>$1644.43</td>
+                  </tr>
+                  <tr>
+                    <td>/404.html</td>
+                    <td>23</td>
+                    <td>34.3%</td>
+                    <td>$23.52</td>
+                  </tr>
+                  <tr>
+                    <td>/services.html</td>
+                    <td>421</td>
+                    <td>60.3%</td>
+                    <td>$724.32</td>
+                  </tr>
+                  <tr>
+                    <td>/blog/post.html</td>
+                    <td>1233</td>
+                    <td>93.2%</td>
+                    <td>$126.34</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2>边框条纹行</h2>
+            <div class="table-responsive">
+              <table class="table table-bordered table-hover table-striped tablesorter">
+                <thead>
+                  <tr>
+                    <th>页面 <i class="fa fa-sort"></i></th>
+                    <th>访问数 <i class="fa fa-sort"></i></th>
+                    <th>% 新访问数 <i class="fa fa-sort"></i></th>
+                    <th>收入 <i class="fa fa-sort"></i></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>/index.html</td>
+                    <td>1265</td>
+                    <td>32.3%</td>
+                    <td>$321.33</td>
+                  </tr>
+                  <tr>
+                    <td>/about.html</td>
+                    <td>261</td>
+                    <td>33.3%</td>
+                    <td>$234.12</td>
+                  </tr>
+                  <tr>
+                    <td>/sales.html</td>
+                    <td>665</td>
+                    <td>21.3%</td>
+                    <td>$16.34</td>
+                  </tr>
+                  <tr>
+                    <td>/blog.html</td>
+                    <td>9516</td>
+                    <td>89.3%</td>
+                    <td>$1644.43</td>
+                  </tr>
+                  <tr>
+                    <td>/404.html</td>
+                    <td>23</td>
+                    <td>34.3%</td>
+                    <td>$23.52</td>
+                  </tr>
+                  <tr>
+                    <td>/services.html</td>
+                    <td>421</td>
+                    <td>60.3%</td>
+                    <td>$724.32</td>
+                  </tr>
+                  <tr>
+                    <td>/blog/post.html</td>
+                    <td>1233</td>
+                    <td>93.2%</td>
+                    <td>$126.34</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div><!-- /.row -->
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>基本表格</h2>
+            <div class="table-responsive">
+              <table class="table table-hover tablesorter">
+                <thead>
+                  <tr>
+                    <th>页面 <i class="fa fa-sort"></i></th>
+                    <th>访问数 <i class="fa fa-sort"></i></th>
+                    <th>% 新访问数 <i class="fa fa-sort"></i></th>
+                    <th>收入 <i class="fa fa-sort"></i></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>/index.html</td>
+                    <td>1265</td>
+                    <td>32.3%</td>
+                    <td>$321.33</td>
+                  </tr>
+                  <tr>
+                    <td>/about.html</td>
+                    <td>261</td>
+                    <td>33.3%</td>
+                    <td>$234.12</td>
+                  </tr>
+                  <tr>
+                    <td>/sales.html</td>
+                    <td>665</td>
+                    <td>21.3%</td>
+                    <td>$16.34</td>
+                  </tr>
+                  <tr>
+                    <td>/blog.html</td>
+                    <td>9516</td>
+                    <td>89.3%</td>
+                    <td>$1644.43</td>
+                  </tr>
+                  <tr>
+                    <td>/404.html</td>
+                    <td>23</td>
+                    <td>34.3%</td>
+                    <td>$23.52</td>
+                  </tr>
+                  <tr>
+                    <td>/services.html</td>
+                    <td>421</td>
+                    <td>60.3%</td>
+                    <td>$724.32</td>
+                  </tr>
+                  <tr>
+                    <td>/blog/post.html</td>
+                    <td>1233</td>
+                    <td>93.2%</td>
+                    <td>$126.34</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2>条纹行</h2>
+            <div class="table-responsive">
+              <table class="table table-hover table-striped tablesorter">
+                <thead>
+                  <tr>
+                    <th>页面 <i class="fa fa-sort"></i></th>
+                    <th>访问数 <i class="fa fa-sort"></i></th>
+                    <th>% 新访问数 <i class="fa fa-sort"></i></th>
+                    <th>收入 <i class="fa fa-sort"></i></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>/index.html</td>
+                    <td>1265</td>
+                    <td>32.3%</td>
+                    <td>$321.33</td>
+                  </tr>
+                  <tr>
+                    <td>/about.html</td>
+                    <td>261</td>
+                    <td>33.3%</td>
+                    <td>$234.12</td>
+                  </tr>
+                  <tr>
+                    <td>/sales.html</td>
+                    <td>665</td>
+                    <td>21.3%</td>
+                    <td>$16.34</td>
+                  </tr>
+                  <tr>
+                    <td>/blog.html</td>
+                    <td>9516</td>
+                    <td>89.3%</td>
+                    <td>$1644.43</td>
+                  </tr>
+                  <tr>
+                    <td>/404.html</td>
+                    <td>23</td>
+                    <td>34.3%</td>
+                    <td>$23.52</td>
+                  </tr>
+                  <tr>
+                    <td>/services.html</td>
+                    <td>421</td>
+                    <td>60.3%</td>
+                    <td>$724.32</td>
+                  </tr>
+                  <tr>
+                    <td>/blog/post.html</td>
+                    <td>1233</td>
+                    <td>93.2%</td>
+                    <td>$126.34</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div><!-- /.row -->
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>上下文类</h2>
+            <div class="table-responsive">
+              <table class="table table-bordered table-hover table-striped tablesorter">
+                <thead>
+                  <tr>
+                    <th>页面 <i class="fa fa-sort"></i></th>
+                    <th>访问数 <i class="fa fa-sort"></i></th>
+                    <th>% 新访问数 <i class="fa fa-sort"></i></th>
+                    <th>收入 <i class="fa fa-sort"></i></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="active">
+                    <td>/index.html</td>
+                    <td>1265</td>
+                    <td>32.3%</td>
+                    <td>$321.33</td>
+                  </tr>
+                  <tr class="success">
+                    <td>/about.html</td>
+                    <td>261</td>
+                    <td>33.3%</td>
+                    <td>$234.12</td>
+                  </tr>
+                  <tr class="warning">
+                    <td>/sales.html</td>
+                    <td>665</td>
+                    <td>21.3%</td>
+                    <td>$16.34</td>
+                  </tr>
+                  <tr class="danger">
+                    <td>/blog.html</td>
+                    <td>9516</td>
+                    <td>89.3%</td>
+                    <td>$1644.43</td>
+                  </tr>
+                  <tr>
+                    <td>/404.html</td>
+                    <td>23</td>
+                    <td>34.3%</td>
+                    <td>$23.52</td>
+                  </tr>
+                  <tr>
+                    <td>/services.html</td>
+                    <td>421</td>
+                    <td>60.3%</td>
+                    <td>$724.32</td>
+                  </tr>
+                  <tr>
+                    <td>/blog/post.html</td>
+                    <td>1233</td>
+                    <td>93.2%</td>
+                    <td>$126.34</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2>Bootstrap文档</h2>
+            <p>访问完整文档, 请访问 <a target="_blank" href="http://getbootstrap.com/css/#tables">Bootstrap's 表格文档</a>.</p>
+          </div>
+        </div><!-- /.row -->
+
+      </div><!-- /#page-wrapper -->
+
+    </div><!-- /#wrapper -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Page Specific Plugins -->
+    <script src="js/tablesorter/jquery.tablesorter.js"></script>
+    <script src="js/tablesorter/tables.js"></script>
+
+  </body>
+</html>

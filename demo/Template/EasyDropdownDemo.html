@@ -1,0 +1,247 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>下载 - OneThink内容管理框架</title>
+	<link href="Public/lib/bootstrap3/css/bootstrap.css" rel="stylesheet">
+	<link href="Public/css/basic.css" rel="stylesheet">
+	<link href="Public/css/default.css" rel="stylesheet">
+	<link rel="stylesheet" href="Public/lib/jquery/css/easydropdown.css"/>
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="Public/lib/html5shiv.js"></script>
+<script type="text/javascript" src="Public/lib/respond.min.js"></script>
+<script type="text/javascript" src="Public/lib/jquery/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+      var msViewportStyle = document.createElement("style")
+      msViewportStyle.appendChild(
+        document.createTextNode(
+          "@-ms-viewport{width:auto!important}"
+        )
+      )
+      document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+}
+</script>
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<script type="text/javascript" src="Public/lib/jquery/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="Public/lib/bootstrap3/js/bootstrap.js"></script>
+<script type="text/javascript" src="Public/lib/bootstrap3/js/bootbox.min.js"></script>
+<script type="text/javascript" src="Public/lib/jquery/js/jquery.easydropdown.min.js"></script>
+<script type="text/javascript" src="Public/js/common.js"></script>
+<!--<![endif]-->
+<!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
+
+
+</head>
+<body>
+	<!-- 头部 -->
+
+	<!-- 导航条
+	================================================== -->
+	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+		<div class="container header">
+			<!-- 头部导航 -->
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" data-target="#nav_index" data-toggle="collapse" type="button">
+						<span class="sr-only">导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="nav-logo"><img src="http://www.placehold.it/40X40&text=logo" alt="logo" /></a>
+				</div>
+				<div class="collapse navbar-collapse" id="nav_index">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="/index/index.html" target="_self">首页</a>
+						</li><li>
+						<a href="/download.html" target="_self">下载</a>
+					</li><li>
+					<a href="/store.html" target="_self">应用商店</a>
+				</li><li>
+				<a href="/forum.html" target="_self">讨论区</a>
+			</li><li>
+			<a href="http://document.onethink.cn" target="_blank">在线手册</a>
+		</li>				</ul>
+		<ul class="nav navbar-nav navbar-right ot-nav-login">
+			<li class="ot-nav-btn">
+				<a data-toggle="modal" href="/user/login.html" data-target="#login-register">登录</a>
+			</li>
+			<li class="ot-nav-btn">
+				<a data-toggle="modal" href="/user/register.html">注册</a>
+			</li>
+			<script type="text/javascript" charset="utf-8">
+			$('.ot-nav-tool').hide();
+			</script>
+		</ul>
+		<div class="col-md-3 col-sm-3 col-xs-12 navbar-right">
+			<form action="/article/search.html" method="get" class="navbar-form navbar-right" role="search">
+				<div class="input-group placeholder_ie">
+					<input type="text" class="form-control" placeholder="请输入文档标题" name="keyword">
+					<i>请输入文档标题</i>
+					<span class="input-group-btn">
+						<button type="submit" class="btn btn-default glyphicon glyphicon-search"></button>
+					</span>
+				</div>
+			</form>
+		</div>
+	</div>
+</nav>
+</div>
+</header>
+<!-- /头部 -->
+
+<!-- 主体 -->
+
+
+<div class="content">
+	<div id="ot-main" class="content_content container">
+
+		<div class="row">
+			<div class="col-md-8 topic_title">
+				<h4>
+					<a href="/index/index.html">首页</a>
+					&nbsp;/&nbsp;<a href="/download.html">下载</a>			</h4>
+					<p class="category_description">OneThink官方核心、插件及文档下载</p>
+				</div>
+
+			</div>
+
+
+			<div class="row row-offcanvas row-offcanvas-right ">
+				
+				<div class="col-md-8 col-xs-12 col-sm-8 topic_content main-block">
+					<div class="post_sort" style="padding: 0;border-bottom: none;">
+					</div>
+					<ul class="list-group ot_post_list">
+
+						<!--普通列表-->
+						<li class="list-group-item">
+							<ul class="list-inline">
+								<li class="avatar">
+									<a href="" class="clearfix"> <img src="http://passport.onethink.cn/Avatar/000/000/00/03/120_120.gif" class="ot_round_user_icon" alt="用户头像" uid="3"> </a>
+								</li>
+								<li class="ot-list-title ot_download_list_title">	
+									<div class="ot_post_topic">
+										<a href="/topic/729.html">OneThink1.0正式版发布</a><span>&nbsp;（3.93MB）</span>
+									</div>
+									<div class="ot_post_info">
+										<span><a href="/cate/core.html">核心框架</a>&nbsp;|&nbsp;</span>
+										<a class="ot-list-author" href="/u/3.html">thinkphp</a>
+										<span>浏览：33781  回复：110</span>
+
+										<span class="ot-list-time pull-right">12-31 09:42</span>
+									</div>
+									<div class="ot_download_intro">
+										<p>
+											OneThink是一个开源的内容管理框架，基于最新的ThinkPHP3.2版本开发，提供更方便、更安全的WEB应用开发体验，采用了全新的架构设计和命名空间机制，融合了模块化、驱动化和插件化的设计理念于一体。		                        </p>
+										</div>
+										<a href="/down/729.html" class="clearfix" title="立即下载"><button class="ot_default_btn pull-right">17833</button></a>
+									</li>
+								</ul>
+							</li>		</ul>
+
+							<div class="onethink pagination">
+								<div class="clearfix">
+									<div>    </div>            </div>
+								</div>
+							</div><!--/span-->
+
+
+							<div class="col-md-4 col-xs-12 col-sm-4 sidebar-offcanvas side-block" id="sidebar" role="navigation">
+
+
+								<div class="board_info">
+									<h4>下载</h4>
+									<div class="board_classify">
+										<ul class="list-unstyled">
+											<li>
+												<span class="list-circle-prefix"></span><a href="/cate/core.html">核心框架</a>
+											</li><li>
+											<span class="list-circle-prefix"></span><a href="/cate/document.html">文档教程</a>
+										</li>								</ul>
+									</div>
+								</div>
+
+								<div style="border:none">
+									<a href="http://thinkphp.cn/da/count/id/16.html" target="_blank">
+										<img style="width: 100%" src="http://www.onethink.cn/Uploads/Editor/2014-01-17/52d8ceb102e52.png" alt="" />
+									</a>
+								</div>						
+								<div class="hot_discuss">
+									<h4>热门下载</h4>
+									<div class="board_classify">
+										<ul class="list-unstyled">
+										</ul>
+									</div>
+								</div>
+
+
+
+
+							</div>
+
+							<div>
+
+
+
+
+							</div>					</div><!--/span-->
+
+						</div>
+					</div>
+				</div>
+
+				<!-- /主体 -->
+
+				<!-- 底部 -->
+
+				<!-- 审批号 -->
+				<div class="record">
+					<div class="container record_content">
+						<div class="row bottom-bar ">
+							<div class="col-md-6">© 2006-2013 上海顶想信息科技有限公司版权所有 </div>
+							<div class="col-md-6"><span class="pull-right">沪ICP备120007941号-3 本站由onethink强力驱动</span></div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+				<!-- 用于加载js代码 -->
+				<!-- 页面footer钩子，一般用于加载插件JS文件和JS代码 -->
+				<link rel="stylesheet" href="Public/lib/returntop/css/02.css">
+				<style>
+				#topcontrol a.top_stick{
+					display: block;
+					outline: medium none;
+					text-decoration: none;
+				}
+				</style>
+				<script src="Public/lib/returntop/js/scrolltopcontrol.js"></script>
+
+
+				<!-- /底部 -->
+
+				<!-- Modal -->
+				<div class="modal fade" id="login-register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				</div><!-- /.modal -->
+
+			</div>
+		</div>
+	</div>
+</div>
+			</body>
+			</html>
