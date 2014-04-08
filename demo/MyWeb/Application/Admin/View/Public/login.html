@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="登录页面">
+    <meta name="author" content="bd">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <title>登录页面</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="__STATIC__/bootstrap3/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="__CSS__/signin.css" rel="stylesheet">
+
+
+    <!--[if lt IE 9]>
+      <script src="__STATIC__/html5shiv.min.js"></script>
+      <script src="__STATIC__/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <form class="form-signin" role="form" method="post" action="{:U('Public/Login')}">
+        <h2 class="form-signin-heading">请登录</h2>
+        <input type="text" name="username" class="form-control" placeholder="用户名" value="admin" required autofocus>
+        <input type="password" name="password" class="form-control" placeholder="密码" value="123456" required>
+        <input type="text" name="secodeverify" class="form-control" placeholder="验证码" required>
+        <img id="imgValid" src="{:U('Public/Verify')}"  alt="验证码" onclick="refresh();" class="valid" >
+        <!-- <label class="checkbox">
+          <input type="checkbox" value="remember-me">记住我
+        </label> -->
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+      </form>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="__STATIC__/modernizr.js"></script>
+    <script type="text/javascript" >
+      function refresh(){
+        document.getElementById("imgValid").src = "{:U('Public/Verify')}";
+      }
+    </script>
+  </body>
+</html>
